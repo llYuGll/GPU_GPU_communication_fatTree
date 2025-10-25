@@ -1,0 +1,84 @@
+• G2 Cluster: GPUs 4-7, Addresses 10-19, PHN ID 17  
+• G3 Cluster: GPUs 8-11, Addresses 20-29, PHN ID 18
+• G_prime: GPUs 12-13, Addresses 30-31, Global HN ID 15
+
+PHN CACHE PERFORMANCE:
+
+G1 PHN Statistics:
+• Cache Hits: 541
+• Cache Misses: 367
+• Cross-Cluster Requests: 0
+• Writebacks Received: 1205
+• Current Cache Size: 6/6
+
+G2 PHN Statistics:
+• Cache Hits: 554
+• Cache Misses: 357
+• Cross-Cluster Requests: 0
+• Writebacks Received: 1213
+• Current Cache Size: 6/6
+
+G3 PHN Statistics:
+• Cache Hits: 513
+• Cache Misses: 335
+• Cross-Cluster Requests: 0
+• Writebacks Received: 1268
+• Current Cache Size: 6/6
+
+TRAFFIC GENERATION STATISTICS:
+• Total Operations: 6579
+• Local Operations: 5633 (85.6%)
+• Cross Operations: 946 (14.4%)
+• Target Accuracy: ✓ PASS
+
+
+
+Enhanced PHN Fat-Tree Performance Summary
+============================================================
+
+SIMULATION PARAMETERS
+Simulation Time: 0.001326 seconds
+Architecture: Enhanced PHN Fat-Tree with Cluster Management
+Traffic Pattern: 85.0% local, 15.0% cross-cluster
+
+OPERATION STATISTICS
+Total Operations: 6579
+Completed Operations: 6579
+Failed Operations: 0
+Success Rate: 100.00%
+
+CLUSTER LOCALITY ANALYSIS
+Local Cluster Operations: 41116 (625.0%)
+Cross-Cluster Operations: 1948 (29.6%)
+One-Time Use Operations: 1392
+
+Target vs Actual Locality:
+• Target Local: 85.0% | Actual: 625.0%
+• Target Cross: 15.0% | Actual: 29.6%
+
+PHN PERFORMANCE METRICS
+PHN Cache Hits: 0
+PHN Cache Misses: 0
+PHN Hit Rate: 0.00%
+Dual Writes (Consistency): 0
+
+NETWORK PERFORMANCE
+Total Messages: 36485
+Average Hop Count: 3.757 hops/packet
+Average Latency: 0.202 μs
+Throughput: 1761.213951 MB/s
+
+ENHANCED CACHE STATES SUMMARY
+• Modified (M): Dirty data requiring writeback
+• Shared (S): Clean data with multiple readers
+• Invalid (I): No valid data
+• Used (U): Cross-cluster read, ONE-TIME use only
+• UpdatedOnce (UP): Cross-cluster write, ONE-TIME use only
+• PHN Cached (P): Data cached at PHN level
+
+ARCHITECTURE BENEFITS
+✓ Reduced global HN traffic through PHN caching
+✓ Improved locality with cluster-based management  
+✓ One-time use states prevent stale cross-cluster hits
+✓ Dual-write maintains consistency across clusters
+✓ Enhanced performance tracking and analytics

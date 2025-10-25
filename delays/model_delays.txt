@@ -1,0 +1,11 @@
+######
+
+Cache hit	2 ns + 0.5 ns LRU overhead	CHINode cache access
+Cache miss penalty	30 ns	Before sending to network
+Memory access	100 ns	Global memory node (_handle_home_node_message)
+LRU access overhead	0.5 ns	Every cache hit
+Switch queueing delay	dynamic	FatTreeSwitch._port_service_loop()
+Switch processing delay	3 ns	FatTreeSwitch._port_service_loop()
+Access link serialization	(64B × 8) / 200 Gbps ≈ 2.56 ns	when hop is node↔leaf
+Backbone link serialization	(64B × 8) / 400 Gbps ≈ 1.28 ns	when hop is leaf↔spine
+Final delivery delay	3 ns	_deliver_to_node()

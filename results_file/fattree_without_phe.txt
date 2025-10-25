@@ -1,0 +1,45 @@
+CHI Fat-Tree NoC Performance Parameters
+=============================================
+
+Simulation Time: 0.001484 seconds
+
+OPERATION STATISTICS
+--------------------
+Total Operations: 6001
+Completed Operations: 6001
+Failed Operations: 0
+Success Rate: 100.00%
+
+NETWORK STATISTICS
+------------------
+Total Messages: 23544
+Total Bytes Transferred: 1506816 B (1471.50 KB)
+Average Hop Count: 4.707 hops/packet
+Throughput: 1015.524473 MB/s
+
+LATENCY ANALYSIS
+----------------
+Average Operation Latency: 0.247 μs
+Average Operation Latency: 247.3 ns
+
+LINK UTILIZATION (Approximate)
+------------------------------
+Access Link Utilization: 4.0621%
+Backbone Link Utilization: 2.0310%
+
+HOME NODE INVOLVEMENT
+---------------------
+Messages involving Home Node: 20854
+Global Memory Access Events: 12791
+HN Message Ratio: 88.57%
+
+NETWORK CONFIGURATION
+---------------------
+Topology: 2-Level Fat-Tree
+Total Nodes: 16 (14 GPUs + 1 CPU + 1 Memory)
+Switches: 4 leaf + 2 spine
+Access Link Bandwidth: 200 Gbps
+Backbone Link Bandwidth: 400 Gbps
+Switch Processing Delay: 3.0 ns
+Packet Size: 64 bytes
+GPU Cache Size: 4 slots (LRU)

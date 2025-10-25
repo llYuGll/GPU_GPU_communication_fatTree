@@ -1,0 +1,45 @@
+CHI Mesh NoC Performance Parameters
+=============================================
+
+Simulation Time: 0.001541 seconds
+
+OPERATION STATISTICS
+--------------------
+Total Operations: 6000
+Completed Operations: 6000
+Failed Operations: 0
+Success Rate: 100.00%
+
+NETWORK STATISTICS
+------------------
+Total Messages: 23539
+Total Bytes Transferred: 1506496 B (1471.19 KB)
+Average Hop Count: 5.254 hops/packet
+Throughput: 977.464368 MB/s
+
+LATENCY ANALYSIS
+----------------
+Average Operation Latency: 0.257 μs
+Average Operation Latency: 256.9 ns
+
+LINK UTILIZATION (Approximate)
+------------------------------
+Access Link Utilization: 3.9099%
+Mesh Link Utilization: 1.9549%
+
+HOME NODE INVOLVEMENT
+---------------------
+Messages involving Home Node: 20849
+Global Memory Access Events: 12787
+HN Message Ratio: 88.57%
+
+NETWORK CONFIGURATION
+---------------------
+Topology: 2D Mesh with XY Routing
+Total Nodes: 16 (14 GPUs + 1 CPU + 1 Memory)
+Routers: 4x4 = 16
+Access Link Bandwidth: 200 Gbps
+Mesh Link Bandwidth: 400 Gbps
+Router Processing Delay: 3.0 ns
+Packet Size: 64 bytes
+GPU Cache Size: 4 slots (LRU)
